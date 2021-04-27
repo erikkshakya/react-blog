@@ -49,7 +49,7 @@ export const articlesDetailsReducer = (
   }
 };
 
-export const articlesCreateReducer = (state = [], action) => {
+export const articlesCreateReducer = (state = {}, action) => {
   switch (action.type) {
     // case ARTICLES_DETAILS:
     //   return action.payload;
@@ -59,6 +59,20 @@ export const articlesCreateReducer = (state = [], action) => {
       return state;
   }
 };
+// export const articlesCreateReducer = (state = {}, action) => {
+//   switch (action.type) {
+//     case ARTICLES_CREATE_REQUEST:
+//       return { loading: true };
+//     case PRODUCT_CREATE_SUCCESS:
+//       return { loading: false, success: true, product: action.payload };
+//     case PRODUCT_CREATE_FAIL:
+//       return { loading: false, error: action.payload };
+//     case PRODUCT_CREATE_RESET:
+//       return {};
+//     default:
+//       return state;
+//   }
+// };
 
 export const articleUpdateReducer = (state = {}, action) => {
   switch (action.type) {

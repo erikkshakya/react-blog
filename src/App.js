@@ -1,17 +1,15 @@
 import "./App.css";
-import React, { useEffect } from "react";
+import React from "react";
 import HomeScreen from "./screens/home-screen";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./screens/nav-bar";
 import ArticleScreen from "./screens/article-screen";
 import SubArticlesScreen from "./screens/subarticle-screen";
 import ArticleEdit from "./screens/articleEdit-screen";
-import SubArticleEdit from "./screens/subarticleEdit-screen";
+import SubArticleEdit from "./screens/subarticle-screen";
 import Register from "./user/register";
 import Login from "./user/login";
 import Thanks from "./thanks";
-import { listArticles, listArticlesDetails } from "./actions/articles-action";
-import { useDispatch, useSelector } from "react-redux";
 
 function App() {
   return (
@@ -29,7 +27,10 @@ function App() {
                 component={() => <ArticleEdit />}
               />
               <Route exact path="/article/:slug" component={ArticleScreen} />
+              <Route exact path="/article/delete/:slug" component={ArticleScreen} />
+
               <Route exact path="/sub" component={SubArticleEdit} />
+              <Route exact path="/sub/edit/:slug" component={SubArticleEdit} />
               <Route exact path="/sub/:slug" component={SubArticlesScreen} />
               <Route exact path="/user/register" component={Register} />
               <Route exact path="/thanks" component={Thanks} />

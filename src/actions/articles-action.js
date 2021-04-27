@@ -1,5 +1,4 @@
 import {
-  ARTICLES_DETAILS,
   ARTICLES_LIST_FAIL,
   ARTICLES_LIST_REQUEST,
   ARTICLES_LIST_SUCCESS,
@@ -30,17 +29,7 @@ export const listArticles = () => async (dispatch) => {
     dispatch({ type: ARTICLES_LIST_FAIL, payload: error.message });
   }
 };
-// export const listArticlesDetails = (slug) => async (dispatch) => {
-//   try {
-//     const data = await api.fetchArticlesDetails(slug);
-//     dispatch({
-//       type: ARTICLES_DETAILS,
-//       payload: data,
-//     });
-//   } catch (error) {
-//     console.log(error.message);
-//   }
-// };
+
 export const listArticlesDetails = (slug) => async (dispatch) => {
   dispatch({ type: ARTICLE_DETAILS_REQUEST, payload: slug });
   try {
@@ -83,7 +72,7 @@ export const updateArticles = (slug, article) => async (dispatch, getState) => {
     dispatch({ type: ARTICLE_UPDATE_FAIL, error: message });
   }
 };
-export const deleteProduct = (slug) => async (dispatch, getState) => {
+export const deleteArticle = (slug) => async (dispatch, getState) => {
   dispatch({ type: ARTICLE_DELETE_REQUEST, payload: slug });
   // const {
   //   userSignin: { userInfo },

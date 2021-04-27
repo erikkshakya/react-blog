@@ -1,110 +1,133 @@
-import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { createSubArticle } from "../actions/subarticles-actions";
-import { Form, Button } from "react-bootstrap";
-import { useSelector } from "react-redux";
-import { listArticles } from "../actions/articles-action";
-import FormData from "form-data";
+// import React, { useState, useEffect } from "react";
+// import { useHistory, useParams } from "react-router-dom";
+// import { useDispatch } from "react-redux";
+// import {
+//   createSubArticle,
+//   listSubArticles,
+//   listSubArticlesDetails,
+// } from "../actions/subarticles-actions";
+// import { useSelector } from "react-redux";
+// import { listArticles } from "../actions/articles-action";
+// import FormData from "form-data";
 
-const SubArticleEdit = () => {
-  let history = useHistory();
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(listArticles());
-  }, [dispatch]);
-  const articleList = useSelector((state) => state.articlesList);
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [image, setImage] = useState("");
-  const [available_on, setAvailable_on] = useState("");
-  const [maintitle, setMainTitle] = useState({
-    maintitle: [],
-  });
+// const SubArticlesScreen = () => {
+//   let history = useHistory();
+//   const dispatch = useDispatch();
+//   useEffect(() => {
+//     dispatch(listArticles());
+//   }, [dispatch]);
+//   const { articles } = useSelector((state) => state?.articlesList);
 
-  const selectHandler = (e) => {
-    const selected = [];
-    let selectedOption = e.target.selectedOptions;
+//   const [product, setProduct] = useState({
+//     title: "",
+//     description: "",
+//     image: "",
+//     available_on: "",
+//     maintitle: "",
+//   });
+//   const { title, description, image, available_on, maintitle } = product;
 
-    for (let i = 0; i < selectedOption.length; i++) {
-      selected.push(selectedOption[i].value);
-    }
-    console.log("aaaaaaaaaaaaaaaa", selected);
-    const final = selected.map(Number);
+//   const selectHandler = (e) => {
+//     const selected = [];
+//     let selectedOption = e.target.selectedOptions;
 
-    setMainTitle({ ...maintitle, [e.target.name]: selected });
-    console.log("!!!!!!!!!!", selected);
-  };
+//     for (let i = 0; i < selectedOption.length; i++) {
+//       selected.push(selectedOption[i].value);
+//     }
+//     console.log("aaaaaaaaaaaaaaaa", selected);
+//     const final = selected.map(Number);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("#######", maintitle);
-    let formData = new FormData();
-    console.log("#############");
-    formData.append("title", title);
-    formData.append("image", image);
-    formData.append("description", description);
-    formData.append("available_on", available_on);
-    formData.append("maintitle", maintitle.maintitle);
-    dispatch(createSubArticle(formData));
-    history.push("/")
-  };
-  return (
-    <Form onSubmit={handleSubmit} encType="multipart/form-data">
-      <Form.Group controlId="exampleForm.ControlInput1">
-        <Form.Label>Title</Form.Label>
-        <button onClick={()=>console.log(articleList)}>erty</button>
-        <Form.Control
-          type="text"
-          placeholder="The Wolf WatchMan"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-      </Form.Group>
-      <Form.Group>
-        <Form.File
-          id="exampleFormControlFile1"
-          label="Upload Image"
-          onChange={(e) => setImage(e.target.files[0])}
-        />
-      </Form.Group>
-      <Form.Group controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Description</Form.Label>
-        <Form.Control
-          as="textarea"
-          rows={3}
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-      </Form.Group>
+//     setProduct({ ...maintitle, [e.target.name]: selected });
+//     console.log("!!!!!!!!!!", final);
+//   };
 
-      <select
-        class="selectpicker"
-        name="maintitle"
-        data-live-search="true"
-        onChange={selectHandler}
-      >
-        {articleList.map((art) => (
-          <option value={art.id}>{art.title}</option>
-        ))}
-      </select>
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     let formData = new FormData();
+//     console.log("#############");
+//     formData.append("title", title);
+//     formData.append("image", image);
+//     formData.append("description", description);
+//     formData.append("available_on", available_on);
+//     formData.append("maintitle", maintitle);
+//     for (let pair of formData.entries()) {
+//       console.log(pair[0] + ", " + pair[1]);
+//     }
 
-      <Form.Group controlId="exampleForm.ControlInput1">
-        <Form.Label>Avaliable On</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Bonish Store"
-          value={available_on}
-          onChange={(e) => setAvailable_on(e.target.value)}
-        />
-      </Form.Group>
-      <Form.Group>
-        <Button variant="outline-dark" type="submit">
-          Submit
-        </Button>
-      </Form.Group>
-    </Form>
-  );
-};
+//     dispatch(createSubArticle(formData));
+//   };
+//   return (
+//     <>
+//       <div className="card border-0 shadow">
+//         <div className="card-header">Add Contact</div>
+//         <div className="card-body">
+//           <form onSubmit={(e) => handleSubmit(e)}>
+//             <div className="form-group">
+//               <div className="form-group">
+//                 <input
+//                   type="text"
+//                   className="form-control"
+//                   value={title}
+//                   onChange={(e) => setPost({ ...post, title: e.target.value })}
+//                   placeholder="description"
+//                 />
+//               </div>
+//               <div className="form-group">
+//                 <input
+//                   id="post-image"
+//                   // onChange={(e) => setFile(e.target.files[0])}
+//                   onChange={(e) =>
+//                     setProduct({ ...product, image: e.target.files[0] })
+//                   }
+//                   name="image"
+//                   type="file"
+//                 />
+//                 <img src={image} height="100px" />
+//               </div>
+//             </div>
+//             <div className="form-group">
+//               <input
+//                 type="text"
+//                 className="form-control"
+//                 value={description}
+//                 onChange={(e) =>
+//                   setProduct({ ...product, description: e.target.value })
+//                 }
+//                 placeholder="Enter Description "
+//               />
+//             </div>
 
-export default SubArticleEdit;
+//             <div className="form-group">
+//               <select
+//                 class="selectpicker"
+//                 name="maintitle"
+//                 data-live-search="true"
+//                 onChange={selectHandler}
+//               >
+//                 {articles?.map((art) => (
+//                   <option value={art?.id}>{art.title}</option>
+//                 ))}
+//               </select>
+//             </div>
+//             <div className="form-group">
+//               <input
+//                 type="text"
+//                 className="form-control"
+//                 value={available_on}
+//                 onChange={(e) =>
+//                   setProduct({ ...product, available_on: e.target.value })
+//                 }
+//                 placeholder="Store name"
+//               />
+//             </div>
+//             <button className="btn btn-danger" type="submit">
+//               Submit
+//             </button>
+//           </form>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default SubArticlesScreen;

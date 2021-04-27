@@ -3,7 +3,6 @@ import { useHistory, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
   createArticle,
-  listArticles,
   listArticlesDetails,
   updateArticles,
 } from "../actions/articles-action";

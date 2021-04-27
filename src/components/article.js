@@ -1,14 +1,18 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useParams, Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
+import { deleteArticle } from "../actions/articles-action";
+import { deleteSubArticles } from "../actions/subarticles-actions";
 
 const Article = ({ art }) => {
+  const dispatch = useDispatch();
+  const deleteItem = () => {
+    console.log(art.slug);
+    dispatch(deleteSubArticles(art.slug));
+    console.log("item deleted");
+  };
   return (
-    // <div className="article-box">
-    //   <h2>{art.title}</h2>
-    //   <img src={art.image} alt={art.title} />
-    // </div>
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src={art.image} />
       <Card.Body>
@@ -17,6 +21,9 @@ const Article = ({ art }) => {
         <Link to={`/article/edit/${art.slug}`}>
           <Button variant="primary">Edit</Button>
         </Link>
+        <Button variant="danger" onClick={deleteItem}>
+          Delete
+        </Button>
       </Card.Body>
     </Card>
   );

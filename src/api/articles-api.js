@@ -40,23 +40,6 @@ export const deleteArticle = (slug) =>
     },
   });
 
-// ########SUBS##########
-export const fetchSubArticlesDetails = (slug) =>
-  axios.get(`${baseUrl}/subtitle/${slug}`);
-export const fetchSubarticles = () => axios.get(`${baseUrl}/subtitle`);
-export const createSubArticle = (data) =>
-  axios
-    .post(`${baseUrl}/subtitle/`, data, {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    })
-    .then(function () {
-      console.log("SUCCESS!!");
-    })
-    .catch(function () {
-      console.log("FAILURE!!");
-    });
 
 export const fetchUser = () =>
   axios.get(`${baseUrl}/maintitle`, {

@@ -6,7 +6,13 @@ import {
   articlesCreateReducer,
 } from "./articles-reducers";
 import { combineReducers } from "redux";
-import { subarticlesListReducer } from "./subarticles-reducers";
+import {
+  subarticleDeleteReducer,
+  subarticlesCreateReducer,
+  subarticlesDetailsReducer,
+  subarticlesListReducer,
+  subarticleUpdateReducer,
+} from "./subarticles-reducers";
 import { UserReducers, userSigninReducer } from "./userReducers";
 
 export default combineReducers({
@@ -15,6 +21,10 @@ export default combineReducers({
   articleDetails: articlesDetailsReducer,
   articleDelete: articleDeleteReducer,
   subarticlesList: subarticlesListReducer,
+  subarticlesCreate: subarticlesCreateReducer,
+  subarticlesDetails: subarticlesDetailsReducer,
+  subarticleUpdate: subarticleUpdateReducer,
+  subarticleDelete: subarticleDeleteReducer,
   userList: UserReducers,
   userLogin: userSigninReducer,
   articlesCreate: articlesCreateReducer,
