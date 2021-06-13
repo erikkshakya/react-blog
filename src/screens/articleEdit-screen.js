@@ -6,6 +6,7 @@ import {
   listArticlesDetails,
   updateArticles,
 } from "../actions/articles-action";
+import {listCategory} from "../actions/category-actions"
 import FormData from "form-data";
 
 const ArticleEdit = () => {
@@ -15,8 +16,8 @@ const ArticleEdit = () => {
   console.log(slug);
 
   useEffect(() => {
-    dispatch(listArticlesDetails(slug));
-  }, [dispatch, slug]);
+    dispatch(listCategory);
+  }, [dispatch]);
 
   const { article } = useSelector((state) => state?.articleDetails);
 

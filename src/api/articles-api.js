@@ -1,9 +1,8 @@
 import axios from "axios";
 
-// const baseUrl = "http://192.168.2.101:8000/api";
 export const baseUrl = "http://localhost:8000/api";
 
-export const fetchArticles = () => axios.get(`${baseUrl}/maintitle`);
+export const fetchArticles = () => axios.get(`${baseUrl}/maintitle/`);
 export const fetchArticlesDetails = (slug) => axios.get(`${baseUrl}/maintitle/${slug}/`);
 export const createArticle = (data) =>
   axios
