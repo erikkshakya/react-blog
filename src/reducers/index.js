@@ -14,6 +14,7 @@ import {
   subarticleUpdateReducer,
 } from "./subarticles-reducers";
 import { UserReducers, userSigninReducer } from "./userReducers";
+import {categoryListReducer} from "./category-reducers"
 
 export default combineReducers({
   articlesList: articlesListReducer,
@@ -28,4 +29,5 @@ export default combineReducers({
   userList: UserReducers,
   userLogin: userSigninReducer,
   articlesCreate: articlesCreateReducer,
+  categoryList: categoryListReducer
 });

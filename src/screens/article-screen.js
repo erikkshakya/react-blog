@@ -16,8 +16,6 @@ const ArticleScreen = () => {
     dispatch(listArticlesDetails(slug));
   }, [dispatch, slug]);
 
-  console.log(articleDetails);
-  console.log(article);
   return (
     <>
       {loading ? (

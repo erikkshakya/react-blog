@@ -1,17 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import { useDispatch } from "react-redux";
 import { signout } from "../actions/user-actions";
 
-const NavBar = () => {
+const NavBar = (props) => {
+  const {toggleMenu} = props
+  const {sideBarOpen} = props
   const dispatch = useDispatch();
   const user = localStorage.getItem("access_token");
+  // const [isOpen, setIsOpen] = useState(false)
+  //
+
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+      <Navbar bg="dark" variant="dark" id="navbar">
         <Nav className="mr-auto">
           <Nav.Link href="#home">Home</Nav.Link>
           <Nav.Link href="#features">Features</Nav.Link>

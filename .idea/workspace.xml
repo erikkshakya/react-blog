@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee3896d-18b7-4a65-8fab-8c95f31b6c95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/api/articles-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/articles-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/articleEdit-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/articleEdit-screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/articles-action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/articles-action.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/subarticles-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/subarticles-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/user-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/user-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/articlesConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/articlesConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/articles-reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/articles-reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/article-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/article-screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/articleEdit-screen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/home-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/home-screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/nav-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/nav-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/subarticle-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/subarticle-screen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +30,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,10 +86,28 @@
       <updated>1622621221403</updated>
       <workItem from="1622621226616" duration="735000" />
       <workItem from="1623571290451" duration="6052000" />
+      <workItem from="1623600721501" duration="11444000" />
+      <workItem from="1623738496054" duration="3187000" />
+      <workItem from="1623853912226" duration="11808000" />
+      <workItem from="1625044483215" duration="1243000" />
+      <workItem from="1625048491203" duration="6276000" />
+      <workItem from="1625068303460" duration="4422000" />
+      <workItem from="1625126481178" duration="30980000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

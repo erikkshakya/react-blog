@@ -14,7 +14,6 @@ import {
   SUBARTICLE_DELETE_FAIL,
   SUBARTICLE_DELETE_REQUEST,
   SUBARTICLE_DELETE_SUCCESS,
-  SUBARTICLE_DELETE_RESET,
 } from "../constants/subarticlesConstants";
 import * as api from "../api/subarticles.api";
 

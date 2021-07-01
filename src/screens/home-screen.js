@@ -16,24 +16,21 @@ const HomeScreen = () => {
 
   const articlesList = useSelector((state) => state.articlesList);
   const { loading, articles, error } = articlesList;
-  // const { subarticles, loading, error } = useSelector(
-  //   (state) => state.subarticlesList
-  // );
-  console.log(articles);
   return (
-    <div className="container">
+
+    <>
       {loading ? (
         <LoadingBox />
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
-        <div className="row center">
+        <div className="row">
           {articles.map((art) => (
-            <Article key={art.slug} art={art} />
+            <Article key={art['slug']} art={art} />
           ))}
         </div>
       )}
-    </div>
+    </>
   );
 };
 
