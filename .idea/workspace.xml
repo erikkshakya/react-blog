@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee3896d-18b7-4a65-8fab-8c95f31b6c95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/article/article.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/articles-action.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/articles-action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/subarticles-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/subarticles-actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/user-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/user-actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/articlesConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/articlesConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/articles-reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/articles-reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/article-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/article-screen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/articleEdit-screen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article/article-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/article-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/article/article-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/article-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/subarticle/subarticle-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/subarticle/subarticle-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/subarticle/subarticle-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/subarticle/subarticle-update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mock/article.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mock/subarticle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/article-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/article-screen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/home-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/home-screen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/nav-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/nav-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/subarticle-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/subarticle-screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/subarticle-screen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/subarticleEdit-screen.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,21 +58,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/photos" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/photos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/components/article" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,7 +86,10 @@
       <workItem from="1625044483215" duration="1243000" />
       <workItem from="1625048491203" duration="6276000" />
       <workItem from="1625068303460" duration="4422000" />
-      <workItem from="1625126481178" duration="30980000" />
+      <workItem from="1625126481178" duration="37497000" />
+      <workItem from="1625210945792" duration="6400000" />
+      <workItem from="1625300092329" duration="7541000" />
+      <workItem from="1625384984474" duration="313000" />
     </task>
     <servers />
   </component>
@@ -109,5 +106,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {useParams} from "react-router";
+import {useParams, useHistory} from "react-router-dom";
 import {listArticles} from "../../actions/articles-action";
 import {
     listSubArticlesDetails,
@@ -9,6 +9,7 @@ import {
 
 const SubArticleUpdate = () => {
     const dispatch = useDispatch();
+    const history = useHistory();
     const {slug} = useParams();
     const [title, setTitle] = useState("");
     const [image, setImage] = useState(null);
@@ -32,7 +33,7 @@ const SubArticleUpdate = () => {
     useEffect(() => {
         setTitle(subarticle?.title);
         setDescription(subarticle?.description);
-        setImage(subarticle?.image);
+        // setImage(subarticle?.image);
         setAvailable_on(subarticle?.available_on);
         setMaintitle(subarticle?.maintitle);
     }, [subarticle]);
@@ -50,10 +51,11 @@ const SubArticleUpdate = () => {
             formData.append("maintitle", maintitle);
         }
         dispatch(updateSubArticles(slug, formData));
+        history.push("/")
     };
     return (
         <>
-            <div className="row center">
+            <div className="row center" style={{margin: 100}}>
                 <div className="card border-0 shadow">
                     <div className="card-header">Update Articles</div>
                     <div className="card-body">

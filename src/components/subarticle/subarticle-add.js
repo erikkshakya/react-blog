@@ -35,7 +35,7 @@ const SubArticleAdd = () => {
         dispatch(createSubArticle(formData));
     };
     return (
-        <div className="container">
+        <div className="container" style={{margin: 100}}>
             <div className="row center">
                 <div className="card border-0 shadow">
                     <div className="card-header">Add Articles</div>
@@ -63,7 +63,7 @@ const SubArticleAdd = () => {
                             <select
                                 onChange={(e) => setMaintitle(e.target.value)}
                             >
-                                <option value={""} disabled>Select an option...</option>
+                                <option value={""} selected disabled>Select an option...</option>
                                 {articles?.map((art) => (
                                     <option key={art.id} value={art.id}>{art.title}</option>
                                 ))}

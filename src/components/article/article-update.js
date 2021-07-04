@@ -27,7 +27,7 @@ const ArticleUpdate = () => {
     useEffect(()=>{
             setTitle(article?.title)
             setDescription(article?.description)
-            setImage(article?.image)
+            // setImage(article?.image)
             setCategory(article?.category)
 
     }, [article])
@@ -39,7 +39,7 @@ const ArticleUpdate = () => {
         const formData = new FormData();
         formData.append("title", title);
         formData.append("description", description);
-        if(!image){
+        if(image){
             formData.append("image", image);
         }
         if(category){
@@ -51,7 +51,7 @@ const ArticleUpdate = () => {
 
     return (
         <>
-            <div className="card border-0 shadow">
+            <div className="card border-0 shadow" style={{margin: 100}}>
                 <div className="card-header">Add Contact</div>
                 <div className="card-body">
                     <form onSubmit={(e) => submitHandler(e)}>

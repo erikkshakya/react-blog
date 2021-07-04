@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Article from "../components/article";
+import Article from "../components/article/article";
 import { listArticles } from "../actions/articles-action";
-import { listSubArticles } from "../actions/subarticles-actions";
 import LoadingBox from "../components/loading.box";
 import MessageBox from "../components/mesage.box";
 
@@ -11,7 +10,6 @@ const HomeScreen = () => {
 
   useEffect(() => {
     dispatch(listArticles());
-    dispatch(listSubArticles());
   }, [dispatch]);
 
   const articlesList = useSelector((state) => state.articlesList);
@@ -24,7 +22,7 @@ const HomeScreen = () => {
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
-        <div className="row">
+        <div className="home">
           {articles.map((art) => (
             <Article key={art['slug']} art={art} />
           ))}

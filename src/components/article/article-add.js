@@ -39,7 +39,7 @@ const ArticleAdd = () => {
 
     return (
         <>
-            <div className="card border-0 shadow">
+            <div className="card border-0 shadow" style={{margin: 100}}>
                 <div className="card-header">Add Contact</div>
                 <div className="card-body">
                     <form onSubmit={(e) => submitHandler(e)}>
@@ -49,7 +49,7 @@ const ArticleAdd = () => {
                                 className="form-control"
                                 value={title}
                                 onChange={(e) => setTitle(e.target.value)}
-                                placeholder="Enter the Dragon "
+                                placeholder="Enter the title "
                             />
                         </div>
                         <div className="form-group">
@@ -65,7 +65,7 @@ const ArticleAdd = () => {
                         <select
                             onChange={(e) => setCategory(e.target.value)}
                         >
-                            <option value={""} disabled>Select an option...</option>
+                            <option value={""} selected disabled>Select an option...</option>
                             {categories?.map((cat) => (
                                 <option value={cat.id}>{cat.name}</option>
                             ))}
