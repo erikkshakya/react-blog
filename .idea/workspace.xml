@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ee3896d-18b7-4a65-8fab-8c95f31b6c95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/article/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article/article-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/article-add.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article/article-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/article-update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/subarticle/subarticle-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/subarticle/subarticle-add.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/subarticle/subarticle-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/subarticle/subarticle-update.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mock/article.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mock/subarticle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/article-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article/article-screen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/home-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/home-screen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/nav-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/nav-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/subarticle-screen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/subarticleEdit-screen.js" beforeDir="false" />
-    </list>
+    <list default="true" id="6ee3896d-18b7-4a65-8fab-8c95f31b6c95" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/photos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -90,6 +71,7 @@
       <workItem from="1625210945792" duration="6400000" />
       <workItem from="1625300092329" duration="7541000" />
       <workItem from="1625384984474" duration="313000" />
+      <workItem from="1626227001055" duration="110000" />
     </task>
     <servers />
   </component>
